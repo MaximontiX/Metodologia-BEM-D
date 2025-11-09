@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Momo+Signature&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Syriac+Western:wght@100..900&family=Playwrite+MX+Guides&family=Rubik+80s+Fade&family=Sixtyfour&display=swap');
+@import url(kitchen.css);@import url(room.css);@import url(living.css);
+
+.house {
+    border: 2px solid black;
+    padding: 20px;
+    height: 250px;
+    background-color: rgb(27, 233, 233);
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    position: absolute;
+    left: 400px;
+    margin-top: 200px;
+    
+    font-family: "Playwrite MX Guides", cursive;
+
+}
+
+
+
+
+
+
+

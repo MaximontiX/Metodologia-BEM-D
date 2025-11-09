@@ -1,0 +1,11 @@
+.room {
+    display: block;
+    position: absolute;
+    left: 230px;
+}
+
+.room--2 {
+     font-family: "Rubik 80s Fade", system-ui;
+     color: rgb(42, 252, 0);
+     background-color: black;
+}
