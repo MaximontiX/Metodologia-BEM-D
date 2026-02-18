@@ -1,22 +1,49 @@
 .kitchen {
-    display: block;
-    position: absolute;
-    left: 30px;
+    background-color: #ffecd1;
+    border: 2px solid #ffa500;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px; 
+    display: flex; /* Fermin:Convertimos la tarjeta de cocina en un contenedor flexible */
+    flex-direction: column; /* Fermin: Organizamos los elementos (título, imagen, lista) en una columna vertical */
+    align-items: center; /* Fermin: Centramos los elementos horizontalmente dentro de la tarjeta */
 }
 
-.kitchen--1 {
-    background-color: rgb(255, 0, 0);
-    font-family: "Momo Signature", cursive;
+.kitchen__title {
+    font-family: "Playwrite MX Guides", cursive;
+    color: #d35400;
+    margin-bottom: 10px;
 }
 
-
-.kitchen--2{ 
-    font-family: "Rubik 80s Fade", system-ui;
-     color: rgb(89, 230, 8);
-     background-color: rgb(93, 6, 255);
+.kitchen__img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.kitchen--3 {
-    font-size: 30px;
-    color: blue;
+.kitchen__list {
+        display: flex;     /* Fermin: Hacemos que la lista interna también sea flexible para controlar sus items */
+    width: 100%;
+    flex-direction: column;
+    gap: 10px; /* Fermin: Espacio entre los items de la lista */
+}
+
+.kitchen__item {
+    background-color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.kitchen__item--primary {
+    background-color: #ff6347;
+    color: white;
+    font-weight: bold;
+}
+
+.kitchen__item--secondary {
+    background-color: #ffa500;
+    color: white;
 }

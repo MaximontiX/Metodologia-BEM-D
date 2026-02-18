@@ -1,11 +1,42 @@
 .room {
-    display: block;
-    position: absolute;
-    left: 230px;
+    background-color: #e3f2fd;
+    border: 2px solid #2196f3;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+
+
+    display: flex; /*Fermin: Activa flexbox para controlar el layout interno del cuarto */
+    flex-direction: column;     /*Fermin: Asegura que el título, imagen y contenido vayan uno debajo del otro */
+    justify-content: space-between;   /* Fermin: Distribuye el espacio disponible entre los elementos equitativamente */
 }
 
-.room--2 {
-     font-family: "Rubik 80s Fade", system-ui;
-     color: rgb(42, 252, 0);
-     background-color: black;
+.room__title {
+    font-family: "Rubik 80s Fade", system-ui;
+    color: #1565c0;
+    text-align: center;
+}
+
+.room__img {
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.room__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /*Fermin: Alinea los textos al centro */
+    gap: 8px;
+}
+
+.room__item {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.room__item--highlight {
+    font-weight: bold;
+    color: #0d47a1;
+    border-bottom: 2px solid #0d47a1;
 }

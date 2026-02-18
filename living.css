@@ -1,24 +1,46 @@
 .living {
-    display: block;
-    position: absolute;
-    right: 30px;
+    background-color: #e8f5e9;
+    border: 2px solid #4caf50;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    display: flex;     /* Fermin: Contenedor flexible para la sala */
+    flex-direction: column;     /* Fermin: Direccion vertical (columna) */
 }
 
-
-.living--t {
-    color: rgb(255, 255, 255);
+.living__title {
     font-family: "Sixtyfour", sans-serif;
+    color: #2e7d32;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-
-.living--3 {
-    font-family: "Noto Sans Syriac Western", sans-serif;
+.living__img {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
+.living__list {
+    display: flex;
+    flex-direction: column-reverse;     /* Fermin; Esto hara que el último elemento del HTML aparezca primero visualmente */
+    gap: 5px;
+}
 
-.living--1 {
+.living__item {
+    padding: 5px;
+    border-bottom: 1px dashed #a5d6a7;
+}
+
+.living__item--fancy {
     font-family: "Dancing Script", cursive;
-    font-size: 30px;
-    color: aqua;
-    background-color: blue;
+    font-size: 1.5rem;
+    color: #1b5e20;
+}
+
+.living__item--extra {
+    background-color: #c8e6c9;
+    border-radius: 4px;
+    text-align: center;
 }

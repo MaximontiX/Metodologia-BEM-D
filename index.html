@@ -1,35 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEM-D</title>
+    <title>Casa Flexbox BEM</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    </head>
 <body>
-<main>
-    <div class="house">
-    <div class="kitchen">
-        <h1 class="kitchen_item kitchen--t">Cocina</h1>
-        <p class="kitchen_item kitchen--1">Olla</p>
-        <p class="kitchen_item kitchen--2">Plato</p>
-        <p class="kitchen_item kitchen--3">Vaso</p>
-    </div>
+    
+    <main class="main-container">
+        <section class="house">
+            
+            <article class="kitchen">
+                <h2 class="kitchen__title">Cocina</h2>
+                <img src="galeria/cocina.jpg" alt="Foto de cocina" class="kitchen__img">
+                <div class="kitchen__list">
+                    <p class="kitchen__item kitchen__item--primary">Olla Premium</p>
+                    <p class="kitchen__item kitchen__item--secondary">Plato Cerámica</p>
+                    <p class="kitchen__item">Vaso Cristal</p>
+                </div>
+            </article> 
 
-    <div class="room">
-        <h1 class="room_item room--t">Cuarto</h1>
-        <p class="room_item room--1">Cama</p>
-        <p class="room_item room--2">Armario</p>
-        <p class="room_item room--3">Lámpara</p>
-    </div>
+            <article class="room">
+                <h2 class="room__title">Cuarto</h2>
+                <img src="galeria/cuarto.jpg" alt="Foto de cuarto" class="room__img">
+                <div class="room__list">
+                    <p class="room__item room__item--highlight">Cama King</p>
+                    <p class="room__item">Armario</p>
+                    <p class="room__item">Lámpara LED</p>
+                </div>
+            </article>
 
-    <div class="living">
-        <h1 class="Living_item living--t">Sala</h1>
-        <p class="living_item living--1">Mesa</p>
-        <p class="living_item living--2">Sofá</p>
-        <p class="living_item living--3">Televisor</p>
-    </div>
-</div>
-</main>
+            <article class="living">
+                <h2 class="living__title">Sala</h2>
+                <img src="galeria/sala.jpg" alt="Foto de sala" class="living__img">
+                <div class="living__list">
+                    <p class="living__item living__item--fancy">Mesa Centro</p>
+                    <p class="living__item">Sofá Cama</p>
+                    <p class="living__item">Televisor 4K</p>
+                    <p class="living__item living__item--extra">Consola</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
 </body>
 </html>

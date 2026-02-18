@@ -1,26 +1,34 @@
+@import url(kitchen.css);
+@import url(room.css);
+@import url(living.css);
+@import url(galeria/);
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Momo+Signature&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Syriac+Western:wght@100..900&family=Playwrite+MX+Guides&family=Rubik+80s+Fade&family=Sixtyfour&display=swap');
-@import url(kitchen.css);@import url(room.css);@import url(living.css);
-
-.house {
-    border: 2px solid black;
-    padding: 20px;
-    height: 250px;
-    background-color: rgb(27, 233, 233);
-    border-radius: 20px;
-    width: 500px;
-    display: flex;
-    position: absolute;
-    left: 400px;
-    margin-top: 200px;
-    
-    font-family: "Playwrite MX Guides", cursive;
-
+* {
+    box-sizing: border-box; /* Fermin: Asegura que el padding no aumente el tamaño total */
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    display: flex; /*Fermin: Usamos Flexbox en el body para centrar todo en la pantalla */
+    justify-content: center;      /* Centra el contenido horizontalmente */
+    background-color: #f0f2f5; 
+    min-height: 100vh;     /* Fermin: Centra verticalmente si hay altura definida, aquí es para asegurar margen */
+    padding-top: 50px;
+}
 
-
-
-
-
+.house {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;    /* Fermin: Activa Flexbox para que las habitaciones se coloquen una al lado de la otra */
+    flex-direction: row;    /* Fermin: Define que los hijos (habitaciones) se organicen en fila (horizontal) */
+    justify-content: space-around;/*Fermin: Distribuye el espacio sobrante alrededor de las habitaciones para que no peguen */
+    align-items: flex-start;/*Fermin: Alinea las habitaciones verticalmente al inicio del contenedor */
+    flex-wrap: wrap;/*Fermin: Permite que si la pantalla es muy chica, las habitaciones bajen a la siguiente línea */
+    gap: 20px;
+}
 
